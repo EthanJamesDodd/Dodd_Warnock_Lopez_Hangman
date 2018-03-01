@@ -1,0 +1,73 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 756.65">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: red;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        opacity: 0.5;
+      }
+
+      .cls-3 {
+        stroke: blue;
+      }
+
+      .cls-4 {
+        fill: #fff;
+        stroke: #231f20;
+      }
+    </style>
+  </defs>
+  <title>lined_paper_background</title>
+  <line id="red_line_left" class="cls-1" x1="89" x2="89" y2="756.65"/>
+  <line id="red_line_right" class="cls-2" x1="517" x2="517" y2="756.65"/>
+  <g id="blue_lines">
+    <line class="cls-3" y1="78.67" x2="612" y2="78.67"/>
+    <line class="cls-3" y1="98.33" x2="612" y2="98.33"/>
+    <line class="cls-3" y1="118" x2="612" y2="118"/>
+    <line class="cls-3" y1="137.67" x2="612" y2="137.67"/>
+    <line class="cls-3" y1="157.33" x2="612" y2="157.33"/>
+    <line class="cls-3" y1="177" x2="612" y2="177"/>
+    <line class="cls-3" y1="196.67" x2="612" y2="196.67"/>
+    <line class="cls-3" y1="216.33" x2="612" y2="216.33"/>
+    <line class="cls-3" y1="236" x2="612" y2="236"/>
+    <line class="cls-3" y1="255.67" x2="612" y2="255.67"/>
+    <line class="cls-3" y1="275.33" x2="612" y2="275.33"/>
+    <line class="cls-3" y1="295" x2="612" y2="295"/>
+    <line class="cls-3" y1="314.67" x2="612" y2="314.67"/>
+    <line class="cls-3" y1="334.33" x2="612" y2="334.33"/>
+    <line class="cls-3" y1="354" x2="612" y2="354"/>
+    <line class="cls-3" y1="373.67" x2="612" y2="373.67"/>
+    <line class="cls-3" y1="393.33" x2="612" y2="393.33"/>
+    <line class="cls-3" y1="413" x2="612" y2="413"/>
+    <line class="cls-3" y1="432.67" x2="612" y2="432.67"/>
+    <line class="cls-3" y1="452.33" x2="612" y2="452.33"/>
+    <line class="cls-3" y1="472" x2="612" y2="472"/>
+    <line class="cls-3" y1="491.67" x2="612" y2="491.67"/>
+    <line class="cls-3" y1="511.33" x2="612" y2="511.33"/>
+    <line class="cls-3" y1="531" x2="612" y2="531"/>
+    <line class="cls-3" y1="550.67" x2="612" y2="550.67"/>
+    <line class="cls-3" y1="570.33" x2="612" y2="570.33"/>
+    <line class="cls-3" y1="590" x2="612" y2="590"/>
+    <line class="cls-3" y1="609.67" x2="612" y2="609.67"/>
+    <line class="cls-3" y1="629.33" x2="612" y2="629.33"/>
+    <line class="cls-3" y1="649" x2="612" y2="649"/>
+    <line class="cls-3" y1="668.67" x2="612" y2="668.67"/>
+    <line class="cls-3" y1="688.33" x2="612" y2="688.33"/>
+    <line class="cls-3" y1="708" x2="612" y2="708"/>
+    <line class="cls-3" y1="727.67" x2="612" y2="727.67"/>
+    <line class="cls-3" y1="747.33" x2="612" y2="747.33"/>
+  </g>
+  <circle id="hole_punch_bottom" class="cls-4" cx="42.5" cy="671.33" r="11.25"/>
+  <circle id="hole_punch_middle" class="cls-4" cx="42.5" cy="378.33" r="11.25"/>
+  <circle id="hole_punch_top" class="cls-4" cx="42.5" cy="91.5" r="11.25"/>
+</svg>
