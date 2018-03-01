@@ -12,7 +12,9 @@
       guessInput = document.querySelector('.user-guess'),
       wrongGuesses = 0, //Count the # of wrong guesses.
       resetScreen = document.querySelector('.reset-screen'),
-      resetButton = resetScreen.querySelector('button');
+      resetButton = resetScreen.querySelector('button'),
+      wrongLetterList = document.querySelector('.wrong-letters'),
+      wrongLetterArray = [];
 
   function resetGame(){
     let gamePieces = Array.from(document.querySelectorAll('.show-piece'));
@@ -48,6 +50,10 @@
     if (!currentWord.includes(this.value)){
       // losing path
       console.log('Invalid Letter!');
+      //Put wrong letters into an array
+      wrongLetterArray.push(this.value);
+      //Make the array a string, put it into a <p> tag
+      wrongLetterList.textContent = wrongLetterArray.join(" ");
       document.querySelector(`.wrong${wrongGuesses}`).classList.add('show-piece');
 
       if(wrongGuesses >=5){
