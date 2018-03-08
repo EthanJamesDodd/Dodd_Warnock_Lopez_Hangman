@@ -16,6 +16,7 @@ body
 
 }
 
+
 #man{
 	width: 200px;
 	height: 200px;
@@ -33,6 +34,8 @@ body
 .reset-screen{
 	display: none;
 }
+
+
 
 /*body{
 	background-image: url("../assets/lined_paper_background.svg");
@@ -57,7 +60,6 @@ body
 }
 #wrongGuesDisplay
 {
-	float:right;
 	height:200px;
 	width: 200px;
 	background:#ffff4d;
@@ -65,6 +67,7 @@ body
 	margin-right:250px;
 	padding:10px;
 	color:black;
+
 }
 #tryAgain
 {
@@ -73,6 +76,15 @@ body
 	background-color: red;
 	color:white;
 	margin-left:200px;
-	position:absolute;
 
+
+}
+#wrongGuessArea
+{
+	float:right;
+}
+h3
+{
+	color:white;
+	font-size: 50px;
 }
