@@ -21,6 +21,8 @@
     let gamePieces = Array.from(document.querySelectorAll('.show-piece'));
     gamePieces.forEach(piece => piece.classList.remove('show-piece'));
     wrongGuesses = 0;
+    correctGuesses - 0;
+    wrongLetterList.textContent = ";"
 
     init();
   }
