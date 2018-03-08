@@ -46,24 +46,25 @@
 }*/
 
 #hangManDiv{
-	background-image: url("../assets/lined_paper_background.svg");
+	/*background-image: url("../assets/lined_paper_background.svg");*/
 	background-repeat: no-repeat;
-	width: 50%;
-	height: 50%;
-	margin: 0 auto;
+	width: 25%;
+	height: 25%;
+	/*margin: 0 auto;*/
 }
 
 #wrongGuesDisplay
 {
+	margin-top: 200px;
 	background-repeat: no-repeat;
 	background-image: url("../assets/guess_sign.svg");
-	background-size: 500px 604px;
+	background-size: 300px 362px;
 	height: 604px;
 }
 
 .wrong-letters
 {
-	padding-top: 150px;
+	padding-top: 100px;
 	padding-left: 50px;
 	font-size: 30px;
 }
