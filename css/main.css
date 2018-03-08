@@ -12,7 +12,7 @@
 	height: 200px;
 }
 
-#head, #body, #leftArm, #rightArm, #leftLeg, #rightLeg{
+#head, #body, #leftArm, #rightArm, #leftLeg, #rightLeg, #face{
 	opacity: 0;
 }
 
@@ -25,9 +25,15 @@
 	display: none;
 }
 
-body{
+/*body{
 	background-image: url("../assets/lined_paper_background.svg");
 	background-repeat: no-repeat;
-	height: 100%;
-	width: 100%;
+}*/
+
+#hangManDiv{
+	background-image: url("../assets/lined_paper_background.svg");
+	background-repeat: no-repeat;
+	width: 50%;
+	height: 50%;
+	margin: 0 auto;
 }

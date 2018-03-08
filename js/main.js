@@ -63,6 +63,7 @@
 
       if(wrongGuesses >=5){ // **
         showResetScreen('You Lose!');
+        document.querySelector('#face').classList.add('show-piece');
       } else {
         // increment wrongGuesses
         wrongGuesses++;
