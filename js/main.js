@@ -4,13 +4,14 @@
   console.log('hangman script fired');
 
   // create an array to hold the words to be guessed
-  const wordsArray = ["Blue", "Red", "White", "Orange", "Purple", "Yellow", "Green"];
+  const wordsArray = ["blue", "red", "white", "orange", "purple", "yellow", "green"];
 
   // set up a variable stack
   let currentWord = null;
       wordHint = document.querySelector('.hint-string'),
       guessInput = document.querySelector('.user-guess'),
       wrongGuesses = 0, //Count the # of wrong guesses.
+      correctGuesses = 0, //Count the # of correct guesses.
       resetScreen = document.querySelector('.reset-screen'),
       resetButton = resetScreen.querySelector('button'),
       wrongLetterList = document.querySelector('.wrong-letters'),
@@ -32,10 +33,12 @@
     console.log(wordHint)                                                              // .split turns letters into an array, .map turns current letter into __, .join makes an array text
   }
 
-  function showResetScreen(){
-    // user has lost, reset the stuff and start over
-    console.log('you lose, loser!');
+  function showResetScreen(message){
+    // user has lost or won, reset the stuff and start over
+    console.log('Game Reset.');
     resetScreen.classList.add('show-piece');
+
+    resetScreen.querySelector('h3').textContent = message;
   }
 
   function takeGuess() {
@@ -43,6 +46,8 @@
     if (this.value == "" || this.value.length < 1) {
       return;
     }
+
+    let currentGuess = this.value; // this is the current letter in the input
 
     console.log(this.value);
   // set up the win lose paths (if / else)
@@ -56,15 +61,31 @@
       wrongLetterList.textContent = wrongLetterArray.join(" ");
       document.querySelector(`.wrong${wrongGuesses}`).classList.add('show-piece');
 
-      if(wrongGuesses >=5){
-        showResetScreen();
+      if(wrongGuesses >=5){ // **
+        showResetScreen('You Lose!');
       } else {
         // increment wrongGuesses
         wrongGuesses++;
-      }
+      } //End If **
 
     } else {
-      // winning path
+      // winning path; If statement on line 43
+      let matchAgainst = currentWord.split("");
+      var hintString = wordHint.textContent.split(" ")
+
+      matchAgainst.forEach((letter, index) => {
+        if(letter === currentGuess){
+          hintString[index] = currentGuess;
+          correctGuesses++; //Add correct guesses.
+        }
+      });
+
+      wordHint.textContent = ""; //Make the hint on the screen be empty
+      wordHint.textContent = hintString.join(" "); //Add Hintstring to Wordhint
+
+      if(correctGuesses === currentWord.length){
+        showResetScreen('You Win!');
+      }
     }
 
   }

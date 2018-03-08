@@ -24,3 +24,10 @@
 .reset-screen{
 	display: none;
 }
+
+body{
+	background-image: url("../assets/lined_paper_background.svg");
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+}
