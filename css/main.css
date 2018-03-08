@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*This class will hide elements on our page*/
+.hidden
+{
+	display: none;
+}
+
+#man{
+	width: 200px;
+	height: 200px;
+}
+
+#head, #body, #leftArm, #rightArm, #leftLeg, #rightLeg{
+	opacity: 0;
+}
+
+.show-piece {
+	display: block !important;
+	opacity: 1 !important;
+}
+
+.reset-screen{
+	display: none;
+}
+
+body{
+	background-image: url("../assets/lined_paper_background.svg");
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+}
