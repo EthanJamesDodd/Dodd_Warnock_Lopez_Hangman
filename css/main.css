@@ -6,6 +6,15 @@
 {
 	display: none;
 }
+body
+{
+	background:url("../assets/wood.jpg")no-repeat;
+	background-position: center;
+	font-family: 'Indie Flower', cursive;
+	color:white;
+
+
+}
 
 #man{
 	width: 200px;
@@ -32,8 +41,38 @@
 
 #hangManDiv{
 	background-image: url("../assets/lined_paper_background.svg");
+	background-color: white;
+	box-shadow: 2px 13px 34px 4px rgba(0,0,0,0.75);
 	background-repeat: no-repeat;
-	width: 50%;
-	height: 50%;
+	width: 30%;
+	height: 30%;
 	margin: 0 auto;
+	margin-top:-200px;
+
+}
+#gamebox
+{
+	margin-left:130px;
+	margin-top:100px;
+}
+#wrongGuesDisplay
+{
+	float:right;
+	height:200px;
+	width: 200px;
+	background:#ffff4d;
+	margin-top:-520px;
+	margin-right:250px;
+	padding:10px;
+	color:black;
+}
+#tryAgain
+{
+	padding:20px;
+	text-align: center;
+	background-color: red;
+	color:white;
+	margin-left:200px;
+	position:absolute;
+
 }
