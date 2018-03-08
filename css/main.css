@@ -7,6 +7,21 @@
 	display: none;
 }
 
+#container
+{
+	margin: 0 auto;
+	background-image: url(../assets/lined_paper_background.svg);
+	background-size: 1000px 1234px;
+	background-repeat: no-repeat;
+	height: 1234px;
+}
+
+#container h1
+{
+	padding-top: 100px;
+	padding-left: 400px;
+}
+
 #man{
 	width: 200px;
 	height: 200px;
@@ -36,4 +51,30 @@
 	width: 50%;
 	height: 50%;
 	margin: 0 auto;
+}
+
+#wrongGuesDisplay
+{
+	background-repeat: no-repeat;
+	background-image: url("../assets/guess_sign.svg");
+	background-size: 500px 604px;
+	height: 604px;
+}
+
+.wrong-letters
+{
+	padding-top: 150px;
+	padding-left: 50px;
+	font-size: 30px;
+}
+
+.user-guess
+{
+	margin-left: 150px;
+}
+
+.hint-string
+{
+	margin-left: 150px;
+	padding-top: 10px;
 }
