@@ -4,7 +4,7 @@
   console.log('hangman script fired');
 
   // create an array to hold the words to be guessed
-  const wordsArray = ["blue", "red", "white", "orange", "purple", "yellow", "green"];
+  const wordsArray = ["angry", "baguette", "sacrifice", "alone", "mistake", "deprication", "bands"];
 
   // set up a variable stack
   let currentWord = null;
@@ -21,6 +21,8 @@
     let gamePieces = Array.from(document.querySelectorAll('.show-piece'));
     gamePieces.forEach(piece => piece.classList.remove('show-piece'));
     wrongGuesses = 0;
+    correctGuesses = 0;
+    wrongLetterList.textContent = "";
 
     init();
   }
